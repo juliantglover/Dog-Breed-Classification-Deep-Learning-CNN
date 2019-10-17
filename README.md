@@ -10,7 +10,7 @@ Due to only having labels for the "train" set of images, to train the CNN the "t
 
 ## Training the CNN
 
-Transfer learning was used to create the CNN in this project. A pretrained resnet152 model was the chosen architecture for the convulutional network. A new fully connected layer was architected to produce the final dog breed predictions. A <a href="https://github.com/juliantglover/Dog-Breed-Classification-Deep-Learning-CNN/blob/master/ModelTrainer.py">model trainer</a> script was used to instantiate and train the neural network.
+Transfer learning was used to create the CNN in this project. A pretrained resnet152 model was the chosen architecture for the convolutional network. A new fully connected layer was architected to produce the final dog breed predictions. A <a href="https://github.com/juliantglover/Dog-Breed-Classification-Deep-Learning-CNN/blob/master/ModelTrainer.py">model trainer</a> script was used to instantiate and train the neural network.
 
 ### Implementing a Transfer Learning Solution
 
