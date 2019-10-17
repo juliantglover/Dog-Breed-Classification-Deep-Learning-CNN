@@ -1,5 +1,5 @@
 # Dog-Breed-Classification-Deep-Learning-CNN
-This repository is an example of a image classifier built, trained, and tested using Python and Pytorch. This document will outline the steps that went into creating a trained dog breed classifier. Also, this document will outline ways that this CNN could be improved.
+This repository is an example of a image classifier built, trained, and tested using Python and PyTorch. This document will outline the steps that went into creating a trained dog breed classifier. The trained CNN is able to predict the correct dog breed from an image of a dog out of 120 possible breeds with a 70% accuracy rate. The CNN was only created in a few hours and with a limited data set. Methods that can be used to improve this CNN's accuracy will be outlined.  
 
 ## Data Collection and Organization
 The CNN was trained using a dataset made available by <a href="https://www.kaggle.com/c/dog-breed-identification/data">Kaggle</a> for a "Dog Breed Identification" competition that includes 120 dog breeds. The data contains a "test" set and a "train" set of images. The "train" set contains 10,223 images and their associated labels. 
@@ -29,4 +29,8 @@ The CNN was trained on the data set and the training loss, test/validation loss,
 #### Accuracy
 <a width="300px" height="300px" href="https://ibb.co/89xFSvX"><img src="https://i.ibb.co/NKNwHD7/Accuracy-vs-Epochs.png" alt="Accuracy-vs-Epochs" border="0"></a>
 
-As can be seen around epoch 18 the CNN's test loss began to increase and training was stopped. 
+The results above show that around epoch 18 the CNN's test loss began to increase and overfitting was likely occuring so training was stopped. 
+
+### Inference
+
+The resulting trained CNN from this project was deployed as Django application than can be viewed in this <a href="https://github.com/juliantglover/Dog-Breed-Classification-DRF-API">repository</a>. The Django applications is simply a Django Rest Framework API that has a single "predictImage" endpoint. The endpoint accepts a single image as input and returns the predicted dog breed as well as the probabilites of all 120 possible classes. The code used to perform the inferencec can be viewed <a href="https://github.com/juliantglover/Dog-Breed-Classification-DRF-API/blob/master/dogbreedclassifier/Inference.py"> here</a>. Each image is cropped, normalized, and transformed to a PyTorch tensor. 
