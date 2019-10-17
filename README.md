@@ -14,7 +14,7 @@ Transfer learning was used to create the CNN in this project. A pretrained resne
 
 ### Implementing a Transfer Learning Solution
 
-The model trainer instantiates a pretrained resnet152 model, freezes the models weights, and replaces the fully collected layer with a new one appropriate for the calssification of dog breeds in the Kaggle data set.
+The model trainer instantiates a pretrained resnet152 model, freezes the model's weights, and replaces the fully collected layer with a new one appropriate for the classification of dog breeds in the Kaggle data set.
 
 ### Data Augmentation
 
