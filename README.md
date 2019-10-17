@@ -31,6 +31,17 @@ The CNN was trained on the data set and the training loss, test/validation loss,
 
 The results above show that around epoch 18 the CNN's test loss began to increase and overfitting was likely occuring so training was stopped. 
 
+#### Improving Accuracy
+
+This entire project was built in a few hours and given more time there are several ways that the performance of the CNN could be increased which will be listed below.
+
+- Including more testing and training images
+- Altering the learning rate
+- Adding momentum
+- Changing the number of hidden layers and nodes in each hidden layer
+- Adding more data augmentation
+- Experimenting with other CNN model architectures
+
 ### Inference
 
-The resulting trained CNN from this project was deployed as Django application than can be viewed in this <a href="https://github.com/juliantglover/Dog-Breed-Classification-DRF-API">repository</a>. The Django applications is simply a Django Rest Framework API that has a single "predictImage" endpoint. The endpoint accepts a single image as input and returns the predicted dog breed as well as the probabilites of all 120 possible classes. The code used to perform the inferencec can be viewed <a href="https://github.com/juliantglover/Dog-Breed-Classification-DRF-API/blob/master/dogbreedclassifier/Inference.py"> here</a>. Each image is cropped, normalized, and transformed to a PyTorch tensor. 
+The resulting trained CNN from this project was deployed as Django application than can be viewed in this <a href="https://github.com/juliantglover/Dog-Breed-Classification-DRF-API">repository</a>. The Django applications is simply a Django Rest Framework API that has a single "predictImage" endpoint. The endpoint accepts a single image as input and returns the predicted dog breed as well as the probabilites of all 120 possible classes. The code used to perform the inference can be viewed <a href="https://github.com/juliantglover/Dog-Breed-Classification-DRF-API/blob/master/dogbreedclassifier/Inference.py"> here</a>. Each image is cropped, normalized, and transformed to a PyTorch tensor and then fed to the trained CNN. 
