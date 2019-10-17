@@ -18,7 +18,7 @@ The model trainer instantiates a pretrained resnet152 model, freezes the model's
 
 ### Data Augmentation
 
-Data augmentation was used in an attempt to increase the accuracy of the CNN. The images were rotated, flipped, and resized in an effort to help the CNN generalize the data set as much as possible. The train transforms in the model trainer show the data augmentation that occured.
+Data augmentation was used in an attempt to increase the accuracy of the CNN. The images were rotated, flipped, and resized in an effort to help the CNN generalize the data set as much as possible. The "train transforms" in the model trainer show the data augmentation that occured.
 
 ### Training the CNN and Early Stopping
 
