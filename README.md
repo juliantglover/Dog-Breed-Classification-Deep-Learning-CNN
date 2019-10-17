@@ -1,6 +1,7 @@
 # Dog-Breed-Classification-Deep-Learning-CNN
 This repository is an example of a image classifier built, trained, and tested using Python and PyTorch. This document will outline the steps that went into creating a trained dog breed classifier. The trained CNN is able to predict the correct dog breed from an image of a dog out of 120 possible breeds with a 70% accuracy rate. The CNN was only created in a few hours and with a limited data set. Methods that can be used to improve this CNN's accuracy will be outlined.  
 
+The completed CNN can be found at <a href="http://52.224.71.14/">http://52.224.71.14/</a>
 ## Data Collection and Organization
 The CNN was trained using a dataset made available by <a href="https://www.kaggle.com/c/dog-breed-identification/data">Kaggle</a> for a "Dog Breed Identification" competition that includes 120 dog breeds. The data contains a "test" set and a "train" set of images. The "train" set contains 10,223 images and their associated labels. 
 
