@@ -50,7 +50,8 @@ This entire project was built in a few hours and given more time there are sever
 ### Inference
 
 #### Django Rest Framework API
-The resulting trained CNN from this project was deployed as a Django application than can be viewed in this <a href="https://github.com/juliantglover/Dog-Breed-Classification-DRF-API">repository</a>. The Django applications is simply a Django Rest Framework API that has a single "predictImage" endpoint. The endpoint accepts a single image as input and returns the predicted dog breed as well as the probabilites of all 120 possible classes. The code used to perform the inference can be viewed <a href="https://github.com/juliantglover/Dog-Breed-Classification-DRF-API/blob/master/dogbreedclassifier/Inference.py"> here</a>. Each image is cropped, normalized, and transformed to a PyTorch tensor and then fed to the trained CNN. 
+The resulting trained CNN from this project was deployed as a 
+Dockerized Django application than can be viewed in this <a href="https://github.com/juliantglover/Dog-Breed-Classification-DRF-API">repository</a>. The Django applications is simply a Django Rest Framework API that has a single "predictImage" endpoint. The endpoint accepts a single image as input and returns the predicted dog breed as well as the probabilites of all 120 possible classes. The code used to perform the inference can be viewed <a href="https://github.com/juliantglover/Dog-Breed-Classification-DRF-API/blob/master/dogbreedclassifier/Inference.py"> here</a>. Each image is cropped, normalized, and transformed to a PyTorch tensor and then fed to the trained CNN. 
 
 #### React Front End
 
