@@ -45,6 +45,7 @@ This entire project was built in a few hours and given more time there are sever
 - Changing the number of hidden layers and nodes in each hidden layer
 - Adding more data augmentation
 - Experimenting with other CNN model architectures
+- Increasing the number of training images in classes that perform the worst
 
 ### Inference
 
