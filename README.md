@@ -2,7 +2,7 @@
 <img src="https://i.ibb.co/6Ppqt9y/breedclassifiercroplong3.gif" alt="breedclassifiercroplong3" width="640" height="322" data-load="full" style="">
 This repository is an example of a image classifier built, trained, and tested using Python and PyTorch. This document will outline the steps that went into creating this trained dog breed classifier. The trained CNN is able to predict the correct dog breed from an image of a dog out of 120 possible breeds with a 70% accuracy rate. The CNN was only created in a few hours and with a limited data set. Methods that can be used to improve this CNN's accuracy will be outlined.  
 
-The completed CNN can be used and tested here: <a href="http://52.224.71.14/">http://52.224.71.14/</a>
+The completed CNN can be used and tested here: <a href="http://40.114.104.156/">http://40.114.104.156/</a>
 
 The list of supported dog breeds can be found <a href="https://github.com/juliantglover/Dog-Breed-Classification-React-Front-End/blob/master/src/DogBreedMap.json"> here</a>.
 ## Data Collection and Organization
@@ -55,4 +55,4 @@ Dockerized Django application than can be viewed in this <a href="https://github
 
 #### React Front End
 
-A React application was created that allows users to upload an image of a dog in jpg/jpeg format and receive the results of the CNN's dog breed prediction. The code repository can be found <a href="https://github.com/juliantglover/Dog-Breed-Classification-React-Front-End">here</a> and the React application can be used here <a href="http://52.224.71.14/">http://52.224.71.14/</a>
+A React application was created that allows users to upload an image of a dog in jpg/jpeg format and receive the results of the CNN's dog breed prediction. The code repository can be found <a href="https://github.com/juliantglover/Dog-Breed-Classification-React-Front-End">here</a> and the React application can be used here <a href="http://40.114.104.156/">http://40.114.104.156/</a>
